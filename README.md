@@ -1,4 +1,4 @@
-# ATK Battery
+# ATK A9 Air Plus Battery
 
 Battery level for **ATK A9-family wireless mice** in the Windows tray, a polling-rate switcher one click away, and an optional **Stream Deck** key showing the level. You don't need ATK HUB open.
 
