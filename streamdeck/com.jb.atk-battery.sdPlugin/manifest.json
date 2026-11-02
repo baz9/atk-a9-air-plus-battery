@@ -1,0 +1,43 @@
+{
+	"Name": "ATK Mouse Battery",
+	"Version": "1.0.0.0",
+	"Author": "JB",
+	"Actions": [
+		{
+			"Name": "Mouse Battery",
+			"UUID": "com.jb.atk-battery.level",
+			"Icon": "imgs/actions/level/icon",
+			"Tooltip": "Shows the ATK mouse battery level from the ATK Battery tray app.",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/level/key",
+					"ShowTitle": false
+				}
+			],
+			"UserTitleEnabled": false
+		}
+	],
+	"Category": "ATK Mouse Battery",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Battery level of an ATK A9-family mouse, read from the ATK Battery tray app on this PC.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "disabled"
+	},
+	"UUID": "com.jb.atk-battery"
+}

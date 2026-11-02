@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+*.spec
+.pytest_cache/
+
+# Node / Stream Deck
+node_modules/
+streamdeck/com.jb.atk-battery.sdPlugin/bin/plugin.js
+streamdeck/com.jb.atk-battery.sdPlugin/logs/
+*.streamDeckPlugin
+
+# Local output
+diagnostics.txt
+*.log

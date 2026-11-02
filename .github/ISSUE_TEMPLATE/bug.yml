@@ -1,0 +1,23 @@
+name: Bug report
+description: Something else isn't working
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Mouse model and connection
+  - type: input
+    id: version
+    attributes:
+      label: App version (first "starting" line in atk-battery.log)
+  - type: textarea
+    id: log
+    attributes:
+      label: atk-battery.log (tray menu → Open log folder)
+      render: text

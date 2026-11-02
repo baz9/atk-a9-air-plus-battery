@@ -1,0 +1,21 @@
+{
+  "name": "atk-battery-streamdeck",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Stream Deck key showing ATK A9-family mouse battery, read from the ATK Battery tray app",
+  "license": "GPL-3.0-only",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/plugin.js --bundle --minify --platform=node --format=esm --target=node20 --outfile=com.jb.atk-battery.sdPlugin/bin/plugin.js \"--banner:js=import { createRequire } from 'node:module'; const require = createRequire(import.meta.url);\"",
+    "validate": "streamdeck validate com.jb.atk-battery.sdPlugin",
+    "pack": "npm run build && streamdeck pack com.jb.atk-battery.sdPlugin --force -o dist"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "^3.0.4"
+  },
+  "devDependencies": {
+    "@elgato/cli": "^1.10.4",
+    "@elgato/schemas": "^0.6.0",
+    "esbuild": "^0.28.2"
+  }
+}

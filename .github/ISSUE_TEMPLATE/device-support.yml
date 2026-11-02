@@ -1,0 +1,40 @@
+name: Mouse not detected / add my mouse
+description: Your ATK or VXE mouse isn't found, or the readings are wrong
+labels: [device-support]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! The diagnostics file is what lets support be added for another mouse.
+        In the tray menu choose **Run diagnostics** and paste the whole file below.
+        It contains USB IDs and raw HID frames only, nothing personal.
+  - type: input
+    id: model
+    attributes:
+      label: Mouse model
+      placeholder: ATK A9 Air Plus
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: Connection
+      options: [1K receiver, 4K receiver, 8K receiver, USB cable, Not sure]
+    validations:
+      required: true
+  - type: input
+    id: hub
+    attributes:
+      label: What ATK HUB shows (battery % and polling rate)
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: diagnostics.txt
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Relevant lines from atk-battery.log (optional)
+      render: text
